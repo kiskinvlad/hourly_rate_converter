@@ -1,6 +1,6 @@
 # HourlyRate converter
 
-## Simple app created using PyQt5
+## Simple app created using PyQt5 for osX
 
 ## How to build easy
 
