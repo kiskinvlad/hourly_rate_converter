@@ -1,3 +1,0 @@
-([('HourlyRateHelper',
-   '/Users/kiskin/PycharmProjects/HourlyRateHelper/dist/HourlyRateHelper',
-   'EXECUTABLE')],)
