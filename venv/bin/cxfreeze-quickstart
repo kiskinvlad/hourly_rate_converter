@@ -1,0 +1,5 @@
+#!/Users/kiskin/PycharmProjects/HourlyRateHelper/venv/bin/python
+from cx_Freeze.setupwriter import main
+
+main()
+
