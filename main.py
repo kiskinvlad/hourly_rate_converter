@@ -4,7 +4,7 @@ from PyQt5.Qt import pyqtSlot
 from PyQt5.QtGui import QDoubleValidator
 from PyQt5.QtWidgets import QWidget, QMainWindow, QLineEdit, QDesktopWidget, QComboBox, QApplication, QHBoxLayout, \
     QVBoxLayout, QFormLayout, QLabel, QPushButton, QMenuBar, QToolBar, QStatusBar
-from PyQt5.QtCore import Qt, QRect, QMetaObject, QCoreApplication
+from PyQt5.QtCore import Qt, QRect, QMetaObject, QCoreApplication, QLocale
 from GetCurrency import GetCurrency
 from Currency import *
 
@@ -241,8 +241,9 @@ class MainWindow(QMainWindow):
         money = 0
         currency_prefix = '$'
         if rate and hours:
-            rate = float(rate)
-            hours = float(hours)
+            rate = float(rate.replace(",", "."))
+            hours = float(hours.replace(",", "."))
+            hours = int(hours) + (hours - int(hours)) / 0.60
             self.statusBar.showMessage("Created by Kiskin Vlad")
             if out_type == "Show in UAH":
                 money = rate * hours
