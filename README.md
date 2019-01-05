@@ -14,3 +14,9 @@ pyinstaller main.py --noconsole --ico=hri.icns --onefile --name=HourlyRateHelper
 appdmg spec.json hourly_rate_helper.dmg
 
 ```
+## License
+
+[MIT](LICENSE.md) &copy; [Kiskin Vladislav][author]
+
+
+[author]: https://github.com/kiskinvlad
